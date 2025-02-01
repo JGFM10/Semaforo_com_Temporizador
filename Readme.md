@@ -1,5 +1,7 @@
 Resumo do código:
-Este código implementa um controle de semáforo utilizando um Raspberry Pi Pico, com três LEDs (vermelho, amarelo e verde) que alternam de acordo com um temporizador repetitivo.
+Este código implementa um controle de semáforo utilizando um Raspberry Pi Pico, com três LEDs (vermelho, amarelo e verde) que alternam de acordo com um temporizador repetitivo, também escrevendo no serial "Passou 1 Segundo" a cada 1 segundo.
+
+Vídeo Demonstração:https://youtu.be/REYumkS0IAs
 
 Definições de pinos: Os botões e LEDs são mapeados para pinos específicos do Pico. O LED vermelho está no pino 13, o LED verde no pino 11 e o LED amarelo no pino 12.
 Função repeating_timer_callback: Controla a alternância entre os LEDs, ligando um de cada vez em sequência a cada 3 segundos. O estado do semáforo é controlado por uma variável estado, que alterna entre 4 valores, e a cada ciclo reinicia.
